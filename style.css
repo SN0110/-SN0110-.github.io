@@ -1,0 +1,84 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
+th {
+    background-color: #0c801e;
+    color: rgb(255, 236, 236);
+    text-align: left;
+}
+
+/* Style the table rows */
+tr:nth-child(even) {
+    background-color: #2ba443;
+}
+
+/* Style table data cells */
+td {
+    padding: 8px;
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Change the background color to your desired color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #2980b9; /* Change the hover background color to your desired color */
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #39db34; /* Change the background color to your desired color */
+    color: #f6f5f5;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #08663a9a; /* Change the hover background color to your desired color */
+}
+
+/* styles.css */
+body {
+    background-color: rgb(68, 215, 122); /* Background color */
+    font-family: 'Arial', sans-serif; /* Default font */
+    color: rgb(246, 246, 246); /* Text color for h1 */
+}
+
+h1, h2, h3 {
+    color: white; /* Text color for h2 and h3 */
+}
+
+p {
+    color: green; /* Text color for p */
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-heading {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 24px;
+}

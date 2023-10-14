@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/cf4480d018.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="custom-heading">
+    <div class="custom-container">
+    <h1>Welcome to My Website</h1>
+    <h2>A website for notes</h2>
+    <h2>Your Notes:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>Note ID</th>
+                <th>Note Content</th>
+        
+            </tr>
+        </thead>
+        <tbody>
+            {% for note in notes %}
+            <tr>
+                <td>
+                    <a href="/edit/{{ note.id }}" class="button">Edit</a>
+                </td>                
+                <td>
+                    <a href="/delete/{{ note.id }}" class="button">Delete</a>
+                </td>                
+                <td>{{ note.id }}</td>
+                <td>{{ note.content }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    
+    
+    
+    <a href="/continue" class="custom-button">Create new note</a>
+    
+</body>
+</html>
+
